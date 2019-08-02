@@ -1,12 +1,11 @@
 version: '2'
 
-  services:
-    app:
-      build: app
-      context: .
-      volumes:
-        - app:/var/www
-      ports:
-        - '80:80'
-        - '443:443'
-      
+services:
+  app:
+    build: app
+    context: .
+    volumes:
+      - app:/var/www
+    ports:
+      - '80:80'
+      - '443:443'
