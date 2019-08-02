@@ -3,7 +3,6 @@ version: '2'
 services:
   app:
     build: app
-    context: .
     volumes:
       - app:/var/www
     ports:
