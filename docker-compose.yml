@@ -3,6 +3,7 @@ version: '2'
 services:
   app:
     build: app
+    env_file: .env
     volumes:
       - app-data:/var/www
     ports:
